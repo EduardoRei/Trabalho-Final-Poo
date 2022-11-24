@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainViewController">
+   <content>
+      <VBox prefHeight="400.0" prefWidth="550.0">
+         <children>
+            <ToolBar prefHeight="40.0" prefWidth="200.0">
+              <items>
+                <Button fx:id="btCriar" mnemonicParsing="false" onAction="#onBtCriarAction" text="Criar Tarefas" />
+              </items>
+            </ToolBar>
+            <TableView fx:id="tableViewTarefa" prefHeight="358.0" prefWidth="550.0">
+              <columns>
+                <TableColumn fx:id="tableColumnId" prefWidth="75.0" text="Id" />
+                <TableColumn fx:id="tableColumnDescricao" prefWidth="75.0" text="Descrição" />
+                  <TableColumn fx:id="tableColumnConcluido" prefWidth="75.0" text="Concluido" />
+                  <TableColumn fx:id="tableColumnPrioridade" prefWidth="75.0" text="Prioridade" />
+                  <TableColumn fx:id="tableColumnAtualizar" prefWidth="75.0" />
+                  <TableColumn fx:id="tableColumnApagar" prefWidth="75.0" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>
